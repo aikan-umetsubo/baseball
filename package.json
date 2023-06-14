@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "operate:crawl": "node ./src/operation/crawler.js > ./resource/players.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,5 +12,8 @@
   "dependencies": {
     "axios": "^1.4.0",
     "jsdom": "^22.1.0"
+  },
+  "engines": {
+    "node": ">=18.16.0"
   }
 }

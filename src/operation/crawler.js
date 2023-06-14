@@ -54,13 +54,12 @@ const main = async () => {
       profile[titleMap[title]] = meta.trim()
     })
 
-    profiles.push(profile)        
-    console.log(profile)
-    console.log(`wait ${new Date()}`)
+    profiles.push(profile)
+
     await wait(5_000 + generateRandomNumber())
   }
 
-  console.log(profiles)
+  console.log(`export const players = ${JSON.stringify(profiles, null, '  ')}`)
 }
 
 main()
